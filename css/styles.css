@@ -1,0 +1,33 @@
+/* колір основного тексту #212121 */
+/* вторичний колір тексту #757575 */
+/* білий #FFFFFF */
+/* вторичний білий  rgba(255, 255, 255, 0.6); */
+/* акцент #2196F3 */
+/* основний колір фону #FFFFFF */
+/* вторичний колір фону #F5F4FA */
+/* колір фону героя і футера #2F303A */
+
+
+body  {
+    background-color: #FFFFFF;
+    color: #212121;
+}
+
+.list {
+    list-style: none;
+}
+.logo  {
+color: #2196F3;
+}
+.logo .logo-black {
+    color: #000000;
+}
+
+.site-nav .link {
+color: #000000;
+    }
+
+.site-nav .link:hover, 
+.site-nav .link:focus {
+color: #2196F3;
+}
