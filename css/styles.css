@@ -7,27 +7,106 @@
 /* вторичний колір фону #F5F4FA */
 /* колір фону героя і футера #2F303A */
 
+:root {
+    --primary-text-color: #212121;
+    --secondary-text-color: #757575;
+    --accent: #2196F3;
+    --primary-white-color: #FFFFFF;
+    --secondary-white-color: rgba(255, 255, 255, 0.6);
+    --primary-bg-color: #FFFFFF;
+    --secondary-bg-color: #F5F4FA;
+    --hero-bg-color: #2F303A;
+    --black-color: #000000;
+}
 
 body  {
-    background-color: #FFFFFF;
-    color: #212121;
+    background-color: var(--primary-bg-color);
+    color: var(--primary-text-color);
 }
 
 .list {
     list-style: none;
 }
+
+/* LOGO */
+
 .logo  {
-color: #2196F3;
+color: var(--accent);
 }
 .logo .logo-black {
-    color: #000000;
+    color: var(--black-color);
+}
+.logo-white {
+    color: var(--primary-white-color);
 }
 
+/* nav */
+
 .site-nav .link {
-color: #000000;
-    }
+    color: inherit;
+}
 
 .site-nav .link:hover, 
-.site-nav .link:focus {
-color: #2196F3;
+.site-nav .link:focus,
+.site-nav .link.active {
+    color: var(--accent);
+}
+
+.contact-list .link {
+    color: var(--secondary-text-color);
+}
+.contact-list .link:hover,
+.contact-list .link:focus {
+    color: var(--accent);
+}
+
+/* hero */
+
+.hero {
+    background-color: var(--hero-bg-color);
+}
+    
+.hero-title {
+    color: var(--primary-white-color);
+}
+    
+.hero .hero-button {
+    background-color: var(--accent);
+    color: var(--primary-white-color);
+}
+
+/* section */
+
+.feature-list .text,
+.team-list .text {
+    color: var(--secondary-text-color);
+}
+
+/* footer */
+
+.footer {
+    background-color: var(--hero-bg-color);
+}
+
+.adress {
+    color: var(--primary-white-color)
+}
+.adress .contact-link {
+    color: var(--secondary-white-color);
+}
+
+/* portfolio */
+.example-list .text {
+    color: var(--secondary-text-color);
+}
+
+.menu-list .button {
+    background-color: var(--secondary-bg-color);
+    color: inherit
+}
+.menu-list .button:hover,
+.menu-list .button:focus,
+.menu-list .button.active{
+    background-color: var(--accent);
+    color: var(--primary-white-color);
 }
